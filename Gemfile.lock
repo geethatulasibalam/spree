@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/sammyd/spree_tuatun_theme.git
+  revision: efdb33d0fdc21d9817629cba146338f11f01f172
+  specs:
+    spree_tuatun_theme (0.1.0)
+
 PATH
   remote: ../spree_simple_sales
   specs:
@@ -418,6 +424,7 @@ DEPENDENCIES
   spree_auth_devise (~> 4.0)
   spree_gateway (~> 3.6)
   spree_simple_sales!
+  spree_tuatun_theme!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3 (~> 1.4)

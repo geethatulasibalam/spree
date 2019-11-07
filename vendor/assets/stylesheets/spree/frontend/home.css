@@ -1,0 +1,25 @@
+#spree-header {
+	background-color:#96C5E8;
+}
+#spree-header #header{
+	background-color:#486982;
+}
+#logotext{
+	font-size:2rem;
+	font-weight: 600;
+	font-family: sans-serif;
+	color:#C8C5D1;
+	font-height:300;
+}
+.breadcrumb{
+	background-color:#C5CFD1;
+}
+.list-group-item.active{
+	background-color:#6CA2AB;
+	border-color: #739BA2;
+}
+.product-body a {
+  color: #1c7a92e0;
+  text-decoration: none;
+  background-color: transparent;
+}

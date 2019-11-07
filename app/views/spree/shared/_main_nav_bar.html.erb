@@ -5,6 +5,9 @@
     </li>
   </ul>
   <ul class="nav navbar-right" data-hook>
+    <li>
+      <%= link_to Spree.t(:products), spree.products_path, class: 'nav-link' %>
+    </li>
     <li id="link-to-cart" class="nav-item" data-hook>
       <noscript>
         <%= link_to_cart %>
