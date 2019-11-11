@@ -23,3 +23,33 @@
   text-decoration: none;
   background-color: transparent;
 }
+#product-title{
+	font-family: sans-serif;
+	font-weight:400;
+	font-size:1.5rem;
+}
+#taxon-crumbs{
+	margin-bottom:120px;
+}
+#description{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#8F9191;
+}
+#product-price{
+	font-style:italic;
+	font-family: Arial;
+	font-size:0.3rem;
+
+}
+.price-heading,.price{
+	font-size:1.5rem;
+}
+#cart-backordered-info{
+	font-size:1rem;
+}
+.card{
+box-shadow: 5px 5px  #E8E9E9;
+}
+.list-group-item a:hover{
+  text-decoration:none;
+}
