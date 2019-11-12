@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/priviterag/spree_slider.git
+  revision: 49532e5d401d2d510e93a27599831bdb4d84704d
+  specs:
+    spree_slider (1.2.0)
+      spree_core (>= 2.2)
+
 PATH
   remote: ../spree_simple_sales
   specs:
@@ -420,6 +427,7 @@ DEPENDENCIES
   spree_auth_devise (~> 4.0)
   spree_gateway (~> 3.6)
   spree_simple_sales!
+  spree_slider!
   spring
   spring-watcher-listen (~> 2.0.0)
   sprockets-helpers (~> 1.2.1)

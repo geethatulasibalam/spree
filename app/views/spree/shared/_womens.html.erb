@@ -1,0 +1,3 @@
+<% @product.taxons.each do |taxon| %>
+  <li class="list-group-item"><%= link_to taxon.name, seo_url(taxon) %></li>
+<% end %>

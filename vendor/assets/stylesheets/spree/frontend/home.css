@@ -53,3 +53,6 @@ box-shadow: 5px 5px  #E8E9E9;
 .list-group-item a:hover{
   text-decoration:none;
 }
+.nav-list li{
+	display: inline;
+}

@@ -1,0 +1,14 @@
+<% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+<nav class="navbar navbar-dark col-md-8 col-sm-9" id="top-nav-bar">
+<% @taxonomies.each do |taxonomy| %>
+  <ul id="nav-bar" class="nav align-items-center d-flex flex-column flex-sm-row navbar-right w-100 justify-content-start justify-content-md-end" data-hook>
+   <% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
+    <% if taxonomy.root.children.any? %>
+	    <li id="nav-bar" data-hook>
+	     <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+	    </li>
+    <% end %>
+     <% end %>
+  </ul>
+<% end %>
+</nav>
