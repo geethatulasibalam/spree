@@ -186,6 +186,7 @@ GEM
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    owlcarousel-rails (2.2.3.5)
     paranoia (2.4.2)
       activerecord (>= 4.0, < 6.1)
     pg (1.1.4)
@@ -243,6 +244,7 @@ GEM
       activesupport (>= 5.0)
       i18n
       polyamorous (= 2.3.0)
+    ratyrate (1.2.2.alpha)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -410,10 +412,13 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
+  jquery-rails
   listen (>= 3.0.5, < 3.2)
+  owlcarousel-rails
   pg
   puma (~> 3.11)
   rails (~> 6.0.0)
+  ratyrate
   sass-rails (~> 5)
   selenium-webdriver
   spree (~> 4.0)

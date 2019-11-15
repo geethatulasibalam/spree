@@ -11,3 +11,6 @@
 
 //= require_tree .
 //= require spree/frontend/spree_auth
+//= require jquery.raty
+//= require ratyrate
+//= require owl.carousel
