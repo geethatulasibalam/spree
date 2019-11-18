@@ -14,3 +14,4 @@
 //= require jquery.raty
 //= require ratyrate
 //= require owl.carousel
+//= require spree/frontend/spree_wishlist
