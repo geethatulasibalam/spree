@@ -7,11 +7,11 @@
   </div>
 <% end %>
 
-<div data-hook="taxon_products">
-  <%= render partial: 'spree/shared/products', locals: { products: @products, taxon: @taxon } %>
-</div>
-
-<% unless params[:keywords].present? %>
+<% if @taxon.children.empty? || !params[:keywords].blank? %>
+  <div data-hook="taxon_products">
+    <%= render partial: 'spree/shared/products', locals: { products: @products, taxon: @taxon } %>
+  </div>
+<% else %>
   <div data-hook="taxon_children">
     <% cache [I18n.locale, @taxon] do %>
       <%= render partial: 'taxon', collection: @taxon.children %>

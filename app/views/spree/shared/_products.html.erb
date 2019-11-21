@@ -15,9 +15,20 @@
     </div>
   <% end %>
 </div>
-
 <% if products.any? %>
-  <div id="products" class="row d-flex" data-hook>
+<div class="row sorting">
+  <div class="col-sm-6 col-sm-offset-6 dropdown">
+    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Sort By
+    </button>
+    <ul class="list-inline dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li class="dropdown-item"><%= link_to "Newest", params.merge(sorting: :ascend_by_updated_at).permit(:sorting) %></li>
+      <li class="dropdown-item"><%= link_to "Lowest price", params.merge(sorting: :ascend_by_master_price).permit(:sorting) %></li>
+      <li class="dropdown-item"><%= link_to "Highest price", params.merge(sorting: :descend_by_master_price).permit(:sorting) %></li>
+    </ul>
+  </div>
+</div>
+  <div id="products" class="row d-flex" data-hook="products-list">
     <div class="owl-carousel owl-theme">
       <%= render partial: 'spree/products/product', collection: products, locals: { taxon: @taxon } %>
     </div>

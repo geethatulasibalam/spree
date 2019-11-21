@@ -2,7 +2,7 @@
 <%= form_tag spree.products_path, method: :get,
   class: "ml-2 form-inline" do %>
 
-  <!--<% cache [I18n.locale, @taxons] do %>
+  <% cache [I18n.locale, @taxons] do %>
     <%= select_tag :taxon,
       options_for_select(
         [[Spree.t(:all_departments), '']] +
@@ -11,7 +11,7 @@
       ),
       aria: { label: 'Taxon' },
       class: "form-control mr-2 mb-2 mb-md-0" %>
-  <% end %>-->
+  <% end %> 
 
   <%= search_field_tag :keywords,
     params[:keywords],

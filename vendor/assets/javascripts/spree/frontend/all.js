@@ -15,3 +15,4 @@
 //= require ratyrate
 //= require owl.carousel
 //= require spree/frontend/spree_wishlist
+//= require spree/frontend/spree_searchkick

@@ -66,3 +66,19 @@ box-shadow: 5px 5px  #E8E9E9;
 .wishlist-save{
 	margin-top:20px;
 }
+.sorting{
+	margin-bottom:30px;
+}
+.list-inline li{
+	display:inline;
+	padding:10px;
+}
+.list-inline a{
+	text-decoration:none;
+	font-weight:500;
+	font-family:sans-serif;
+	color:#AAA9A4;
+}
+.list-inline li:hover{
+ 	cursor:pointer;
+}

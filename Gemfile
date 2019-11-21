@@ -50,6 +50,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
+gem 'pry'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
@@ -69,3 +70,7 @@ gem 'coffee-rails'
 gem 'spree_wishlist', github: 'spree-contrib/spree_wishlist', branch: 'master'
 # gem 'spree_email_to_friend', github: 'spree-contrib/spree_email_to_friend', branch: 'master'
 # gem 'spree_gift_card', github: 'vinsol-spree-contrib/spree_gift_card' 
+# gem 'spree_elasticsearch', github: 'javereec/spree_elasticsearch', branch: 'master'
+gem 'searchkick'
+gem 'spree_searchkick', github: 'ronzalo/spree_searchkick', branch: '4-0-stable'
+# gem 'spree_elasticsearch', github: 'ronzalo/spree_elasticsearch', branch: '4-0-stable'
